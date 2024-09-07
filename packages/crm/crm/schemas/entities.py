@@ -5,7 +5,7 @@ from pprint import pprint
 
 from arbm_core.private.investors import Fund
 
-from crm.schemas import AllOptional
+from . import AllOptional
 
 
 class FundCreateSchema(BaseModel):

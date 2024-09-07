@@ -5,9 +5,9 @@ from pymongo.errors import DuplicateKeyError
 
 from fastapi import APIRouter, Depends, HTTPException, status
 
-from crm.schemas.collections import BaseCollectionSchema, CollectionSchema, CollectionPatchSchema, \
+from ..schemas.collections import BaseCollectionSchema, CollectionSchema, CollectionPatchSchema, \
                                     EntryCreateSchema, EntrySchema
-from crm.dependencies import MongoDb
+from ..dependencies import MongoDb
 
 router = APIRouter()
 

@@ -11,10 +11,10 @@ from arbm_core.private.investors import Fund, Investor
 from arbm_core.public.projects import FundProfile
 from arbm_core.public.users import ClientOrganization
 
-from crm import IMAGES_URL
-from crm.file_handlers import save_fund_thumbnail
-from crm.helpers import query_model
-from crm.schemas.clients import OrgSchema
+from .. import IMAGES_URL
+from ..file_handlers import save_fund_thumbnail
+from ..helpers import query_model
+from ..schemas.clients import OrgSchema
 
 from ..dependencies import DbSession, QueryParams, RouterTags
 from ..schemas.entities import FundCreateSchema, FundSchema, FundPatchSchema, InvestorSchema

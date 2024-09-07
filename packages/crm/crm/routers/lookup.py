@@ -4,13 +4,13 @@ from fastapi import APIRouter
 from arbm_core.private.projects import TrackedProject
 from arbm_core.private.investors import Fund, Investor
 
-from crm.dependencies import DbSession, RouterTags
-from crm.helpers import lookup_obj
+from packages.crm.crm.dependencies import DbSession, RouterTags
+from packages.crm.crm.helpers import lookup_obj
 
-from crm.schemas.projects import ProjectSchema
-from crm.schemas.entities import FundSchema, InvestorSchema
+from packages.crm.crm.schemas.projects import ProjectSchema
+from packages.crm.crm.schemas.entities import FundSchema, InvestorSchema
 
-from util import strip_url
+from packages.crm.util import strip_url
 
 
 router = APIRouter()

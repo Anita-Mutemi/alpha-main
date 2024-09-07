@@ -9,10 +9,10 @@ from arbm_core.private.projects import TrackedProject, ProjectStatus
 from arbm_core.private.linkedin import LinkedinLike
 from arbm_core.private.logging import LogEntry
 
-from analysis.statistics import get_projects_fully_tagged, get_tag_statistics, get_new_projects
-from parsing.linkedin_enrichment import QUEUE_MAX_PRIORITY
-from crm.dependencies import DbSession, PaginationParams
-from util import utc_now
+from packages.crm.analysis.statistics import get_projects_fully_tagged, get_tag_statistics, get_new_projects
+from packages.crm.parsing.linkedin_enrichment import QUEUE_MAX_PRIORITY
+from packages.crm.crm.dependencies import DbSession, PaginationParams
+from packages.crm.util import utc_now
 
 
 router = APIRouter()

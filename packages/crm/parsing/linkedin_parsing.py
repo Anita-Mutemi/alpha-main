@@ -1,9 +1,9 @@
-from crm.schemas.parsing import LinkedinLikesSignalSchema
-from parsing.content_queue import PersistentQueue
-from projects.linkedin_utils import create_post_from_signal, post_add_investor
-from projects.project_utils import MODULE_NAME, get_investor
-from projects.schemas.signals import LinkedinPostSignal
-from util import clean_url, log_event, utc_now
+from ..crm.schemas.parsing import LinkedinLikesSignalSchema
+from .content_queue import PersistentQueue
+from ..projects.linkedin_utils import create_post_from_signal, post_add_investor
+from ..projects.project_utils import MODULE_NAME, get_investor
+from ..projects.schemas.signals import LinkedinPostSignal
+from ..util import clean_url, log_event, utc_now
 
 
 from arbm_core import private as back_db

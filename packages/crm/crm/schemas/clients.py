@@ -7,9 +7,9 @@ from pytz import common_timezones_set
 
 from arbm_core.public.users import MembershipPlan
 
-from ..schemas import AllOptional
+from packages.crm.crm.schemas import AllOptional
 
-from util import Weekday
+from packages.crm.util import Weekday
 
 
 class ClientUserCreateSchema(BaseModel):

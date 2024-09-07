@@ -1,5 +1,5 @@
-from projects.schemas.signals import InvestorIdSchema
-from util import validate_linkedin_url
+from ...projects.schemas.signals import InvestorIdSchema
+from ...util import validate_linkedin_url
 
 
 from pydantic import BaseModel, HttpUrl, constr, root_validator, validator

@@ -6,8 +6,8 @@ from loguru import logger
 from loguru import logger
 from pydantic import BaseModel, HttpUrl, constr, validator
 
-from projects.schemas.linkedin import ProjectLinkedinDetailsSchema
-from util import validate_linkedin_url
+from .linkedin import ProjectLinkedinDetailsSchema
+from ...util import validate_linkedin_url
 
 
 class InvestingEntitySchema(BaseModel, ABC):

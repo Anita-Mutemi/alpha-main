@@ -7,7 +7,7 @@ from arbm_core.private.investors import Investor
 from sqlalchemy.exc import MultipleResultsFound, NoResultFound
 from sqlalchemy.sql.expression import func
 
-from projects import ProjectUpdateError
+from . import ProjectUpdateError
 
 
 MODULE_NAME = os.path.basename(__file__)

@@ -6,20 +6,20 @@ from arbm_core.private.projects import TrackedProject
 
 from sqlalchemy import or_, select
 
-from api_external.iscraper import profile_company_details_v3
-from crm.schemas.parsing import LinkedinLikesSignalSchema
+from ..api_external.iscraper import profile_company_details_v3
+from ..crm.schemas.parsing import LinkedinLikesSignalSchema
 from pydantic import HttpUrl, ValidationError
 
 from arbm_core.core.utils import get_one_or_create
 from arbm_core.private.linkedin import LinkedinCompany, LinkedinInvestorActivityAssociation, LinkedinLike, LinkedinPersonal, LinkedinPost, LinkedinProfile, LinkedinUrl
 from loguru import logger
 
-from projects.schemas.linkedin import ProjectLinkedinDetailsSchema
-from projects.schemas.project import ProjectData
+from .schemas.linkedin import ProjectLinkedinDetailsSchema
+from .schemas.project import ProjectData
 
-from parsing import LinkedinEnrichError
+from ..parsing import LinkedinEnrichError
 
-from util import clean_url, get_linkedin_id, nested_get, utc_now
+from ..util import clean_url, get_linkedin_id, nested_get, utc_now
 
 
 field_mappings = {

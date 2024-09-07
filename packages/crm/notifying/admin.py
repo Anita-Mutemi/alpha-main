@@ -4,8 +4,8 @@ from sqlalchemy import or_
 from arbm_core.private import Session
 from arbm_core.private.users import User
 
-from messaging import telegram
-from messaging.email import smtp_send
+from ..messaging import telegram
+from ..messaging.email import smtp_send
 
 
 USER_RECEPIENTS = {

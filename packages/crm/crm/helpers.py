@@ -7,8 +7,8 @@ from pydantic import BaseModel
 
 from loguru import logger
 
-from crm.dependencies import QueryParams
-from crm.filters import prepare_query
+from .dependencies import QueryParams
+from .filters import prepare_query
 
 
 def query_model(db, model, query: QueryParams, *, query_field: str | None,

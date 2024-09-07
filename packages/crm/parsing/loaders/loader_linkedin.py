@@ -14,7 +14,7 @@ from arbm_core.private.investors import (
 )
 from loguru import logger
 
-from util import utc_now
+from ...util import utc_now
 
 
 class LinkedinImportError(BaseException):

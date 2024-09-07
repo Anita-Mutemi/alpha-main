@@ -3,7 +3,7 @@ from uuid import UUID
 
 from pydantic import BaseModel
 
-from projects.schemas.filters import FilterResult
+from .schemas.filters import FilterResult
 
 
 class LogEvent(BaseModel):

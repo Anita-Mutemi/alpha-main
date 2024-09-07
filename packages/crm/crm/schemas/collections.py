@@ -3,7 +3,7 @@ import uuid
 from pydantic import BaseModel, Field, validator
 from bson.objectid import ObjectId as BsonObjectId
 
-from crm.schemas import AllOptional
+from . import AllOptional
 
 
 from pydantic.json import ENCODERS_BY_TYPE

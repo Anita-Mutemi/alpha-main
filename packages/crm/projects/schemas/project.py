@@ -1,8 +1,8 @@
 from pydantic import BaseModel, HttpUrl, constr, validator
 
-from crm.schemas import AllOptional
-from crm.schemas.projects import ProjectAnalyticsPatchSchema
-from util import prune_website
+from ...crm.schemas import AllOptional
+from ...crm.schemas.projects import ProjectAnalyticsPatchSchema
+from ...util import prune_website
 
 
 class ProjectData(BaseModel, metaclass=AllOptional):

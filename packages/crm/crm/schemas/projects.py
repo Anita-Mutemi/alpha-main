@@ -9,9 +9,9 @@ from pydantic import BaseModel, EmailStr, Field, conint, constr, HttpUrl, root_v
 
 from arbm_core.private.projects import InvestmentStage, ProjectStatus
 
-from crm.schemas import AllOptional, ModifiableGetter
-from crm.schemas.entities import FundIdentitySchema, FundSchema
-from util import prune_website, validate_linkedin_profile_url
+from packages.crm.crm.schemas import AllOptional, ModifiableGetter
+from packages.crm.crm.schemas.entities import FundIdentitySchema, FundSchema
+from packages.crm.util import prune_website, validate_linkedin_profile_url
 
 
 class LeaderCreateSchema(BaseModel):

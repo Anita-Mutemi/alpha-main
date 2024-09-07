@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
-from crm.schemas.projects import ProjectSchema
+from .projects import ProjectSchema
 
 
 class FeedSchema(BaseModel):

@@ -3,21 +3,21 @@ from fastapi.middleware.cors import CORSMiddleware
 from loguru import logger
 import sys
 
-from crm.dependencies import RouterTags
-from crm.file_handlers import upload_investors
-import util
+from .dependencies import RouterTags
+from .file_handlers import upload_investors
+from packages.crm import util
 
 from . import auth
 from .routers import clients, collections, entities, lookup, monitoring, parser, projects
 
 
-#logfile = util.project_root() / "logs/web" / f"web.log"
-#logger.add(logfile.absolute(), rotation="00:00", format="[Web App] {time} {name} {level}: {message}",
+# logfile = util.project_root() / "logs/web" / f"web.log"
+# logger.add(logfile.absolute(), rotation="00:00", format="[Web App] {time} {name} {level}: {message}",
 #           level="DEBUG", backtrace=True, diagnose=True)
-#api_logger.remove()
-#logfile = util.project_root() / "logs/web" / f"web_api.log"
-#api_logger.add(sys.stderr, format="[Web Api] {time} {name} {level}: {message}", level="DEBUG")
-#api_logger.add(logfile.absolute(), rotation="00:00", format="[Web Api] {time} {name} {level}: {message}",
+# api_logger.remove()
+# logfile = util.project_root() / "logs/web" / f"web_api.log"
+# api_logger.add(sys.stderr, format="[Web Api] {time} {name} {level}: {message}", level="DEBUG")
+# api_logger.add(logfile.absolute(), rotation="00:00", format="[Web Api] {time} {name} {level}: {message}",
 #           level="DEBUG", backtrace=True, diagnose=True)
 
 

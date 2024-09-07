@@ -10,11 +10,11 @@ import pandas as pd
 from arbm_core.private import Session
 from arbm_core.private.linkedin import LinkedinCompany, LinkedinUrl
 
-from parsing.loaders.loader_investors import load_investors
-from parsing.loaders.loader_linkedin import LinkedinImportError, load_activity, load_likers
+from packages.crm.parsing.loaders.loader_investors import load_investors
+from packages.crm.parsing.loaders.loader_linkedin import LinkedinImportError, load_activity, load_likers
 
-import util
-from util import utc_now
+from packages.crm import util
+from packages.crm.util import utc_now
 
 
 import requests

@@ -3,16 +3,16 @@ from fastapi import APIRouter, HTTPException
 from loguru import logger
 
 from arbm_core.private.investors import Investor
-from crm.schemas.collections import CollectionSchema
-from crm.schemas.entities import InvestorSchema
+from packages.crm.crm.schemas.collections import CollectionSchema
+from packages.crm.crm.schemas.entities import InvestorSchema
 
-from parsing.linkedin_parsing import queue_linkedin_signals
-from crm.schemas.parsing import LinkedinLikesSignalSchema
+from packages.crm.parsing.linkedin_parsing import queue_linkedin_signals
+from packages.crm.crm.schemas.parsing import LinkedinLikesSignalSchema
 
-from crm.dependencies import DbSession
-from crm.helpers import lookup_obj
+from packages.crm.crm.dependencies import DbSession
+from packages.crm.crm.helpers import lookup_obj
 
-from crm.routers.collections import Collection
+from packages.crm.crm.routers.collections import Collection
 
 
 router = APIRouter()

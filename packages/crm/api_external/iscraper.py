@@ -1,4 +1,4 @@
-from api_external import ApiError, api_call, async_api_call
+from . import ApiError, api_call, async_api_call
 
 ISCRAPER_V2_URL = 'https://api.iscraper.io/v2'
 ISCRAPER_V3_URL = 'https://api.iscraper.io/v3'

@@ -8,7 +8,7 @@ from arbm_core.private.queue import QueuedItem
 from loguru import logger
 from sqlalchemy import delete, asc, desc, or_, update
 
-from util import utc_now
+from ..util import utc_now
 
 
 class PersistentQueue:

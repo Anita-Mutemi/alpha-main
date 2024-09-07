@@ -14,20 +14,20 @@ from arbm_core.private.projects import TrackedProject, ProjectAnalytics, Investm
                                         ProjectTag, ProjectStatus, Leader
 from arbm_core.private.linkedin import LinkedinProfile
 from arbm_core.core.utils import get_one_or_create
-from crm.schemas.feed import FeedSchema
-from parsing.linkedin_enrichment import enrich_companies, update_linkedin_project
-from projects import LogEvent
-from projects.linkedin_utils import extract_project_data, parse_company_data
+from packages.crm.crm.schemas.feed import FeedSchema
+from packages.crm.parsing.linkedin_enrichment import enrich_companies, update_linkedin_project
+# from .projects import LogEvent
+from packages.crm.projects.linkedin_utils import extract_project_data, parse_company_data
 
-from projects.project_init import inject_project, update_entities, update_project_details
+from packages.crm.projects.project_init import inject_project, update_entities, update_project_details
 
-from crm.filters import PROJECT_FILTERS, ChoicesFilterSchema, filter_objects, ProjectFiltersSchema
-from crm.helpers import group_by, patch_object
-from crm.schemas.projects import LeaderCreateSchema, LeaderUpdateSchema, ProjectAnalyticsPatchSchema, ProjectAnalyticsSchema, \
+from packages.crm.crm.filters import PROJECT_FILTERS, ChoicesFilterSchema, filter_objects, ProjectFiltersSchema
+from packages.crm.crm.helpers import group_by, patch_object
+from packages.crm.crm.schemas.projects import LeaderCreateSchema, LeaderUpdateSchema, ProjectAnalyticsPatchSchema, ProjectAnalyticsSchema, \
     ProjectCreateSchema, ProjectPatchSchema, ProjectSchema
-from crm.dependencies import DbSession, QueryParams
-from projects.schemas.project import ProjectData
-from projects.schemas.signals import DirectSignal, LinkedinPostSignal, LinkedinSourceSchema
+from packages.crm.crm.dependencies import DbSession, QueryParams
+from packages.crm.projects.schemas.project import ProjectData
+from packages.crm.projects.schemas.signals import DirectSignal, LinkedinPostSignal, LinkedinSourceSchema
 
 
 router = APIRouter()

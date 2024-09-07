@@ -9,7 +9,7 @@ import openai
 from loguru import logger
 from openai.error import RateLimitError, ServiceUnavailableError, Timeout, APIError
 
-from analysis import AnnotationError
+from ..analysis import AnnotationError
 
 openai.api_key = "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"
 

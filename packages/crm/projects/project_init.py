@@ -19,22 +19,22 @@ from arbm_core.private.projects import (
 from arbm_core.private.investors import Fund
 from arbm_core.core.signals import AddSignal, YearMonth
 from arbm_core.core.utils import get_one_or_create
-from crm import IMAGES_URL
-from crm.file_handlers import save_project_thumbnail
+from ..crm import IMAGES_URL
+from ..crm.file_handlers import save_project_thumbnail
 
-from projects import FilteringEvent, FilteringException, ProjectEvent, ProjectException, ProjectInitError
-from projects.linkedin_utils import update_linkedin_profile
-from projects.project_filtering import filter_b2b_company, filter_is_startup, filter_signal, filter_company
-from projects import (
+from . import FilteringEvent, FilteringException, ProjectEvent, ProjectException, ProjectInitError
+from .linkedin_utils import update_linkedin_profile
+from .project_filtering import filter_b2b_company, filter_is_startup, filter_signal, filter_company
+from . import (
     DuplicateProjectsError,
 )
-from projects.schemas.filters import FilterResult
+from .schemas.filters import FilterResult
 
-from projects.schemas.project import ProjectData
+from .schemas.project import ProjectData
 
-from crm.schemas.projects import ProjectCreateSchema, ProjectSchema
-from projects.schemas.signals import FundIdSchema, LinkedinSourceSchema, ProjectSourceSchema
-from util import get_url_root
+from ..crm.schemas.projects import ProjectCreateSchema, ProjectSchema
+from .schemas.signals import FundIdSchema, LinkedinSourceSchema, ProjectSourceSchema
+from ..util import get_url_root
 
 
 def update_entities(s, project_update: ProjectData, source: ProjectSourceSchema) -> Any:

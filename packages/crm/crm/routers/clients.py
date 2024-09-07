@@ -14,12 +14,12 @@ from arbm_core.core.publishing import PublishingError, publish_project
 from arbm_core.public.users import ClientOrganization, ClientUser
 from arbm_core.public.projects import Project, UserProjectAssociation, FundProfile
 
-from crm.dependencies import DbSession, PaginationParams, QueryParams
-from crm.schemas.clients import OrgSchema, OrgCreateSchema, \
+from ..dependencies import DbSession, PaginationParams, QueryParams
+from ..schemas.clients import OrgSchema, OrgCreateSchema, \
                                 ClientUserSchema, ClientUserCreateSchema, ProjectUserSchema
-from crm.schemas.entities import FundIdentitySchema
-from crm.helpers import query_model
-import util
+from ..schemas.entities import FundIdentitySchema
+from ..helpers import query_model
+from packages.crm import util
 
 router = APIRouter()
 

@@ -13,26 +13,26 @@ from sqlalchemy.exc import NoResultFound
 
 from arbm_core.private.projects import TrackedProject, ProjectAnalytics
 from arbm_core.private.investors import Fund
-from analysis.annotate_projects import tag_with_tagger, update_tag
-from analysis.gpt_tag import GPTTagger
+from ..analysis.annotate_projects import tag_with_tagger, update_tag
+from ..analysis.gpt_tag import GPTTagger
 
-from api_external.openai_api import chat_completion, parse_bool_response
-from projects.schemas.filters import FilterResult
-from projects import FilterPreconditionException
-from projects.schemas.filters import CombinedFilterConfig, FilterConfig, GptFilterConfig, RangeFilterConfig, RegexFilterConfig, TagsFilterConfig
-from projects.schemas.project import ProjectData
-from projects.schemas.signals import FundIdSchema
-import util
+from ..api_external.openai_api import chat_completion, parse_bool_response
+from .schemas.filters import FilterResult
+from . import FilterPreconditionException
+from .schemas.filters import CombinedFilterConfig, FilterConfig, GptFilterConfig, RangeFilterConfig, RegexFilterConfig, TagsFilterConfig
+from .schemas.project import ProjectData
+from .schemas.signals import FundIdSchema
+from packages.crm import util
 
 
-DESCRIPTION_EXCLUSION_TERMS = util.read_list('excluded_descriptions.txt')
-TITLE_EXCLUSION_TERMS = util.read_list('excluded_titles.txt')
-IS_STARTUP_PROMPT = util.read_const_file('is_startup_prompt.txt').read_text()
-THESIS_MATCH_PROMPT = util.read_const_file('thesis_match_prompt.txt').read_text()
-IS_MANUFACTURING_PROMPT = util.read_const_file('manufacturing_prompt.txt').read_text()
-IS_HAZMAT_PROMPT = util.read_const_file('is_hazmat_prompt.txt').read_text()
+DESCRIPTION_EXCLUSION_TERMS = util.read_list("excluded_descriptions.txt")
+TITLE_EXCLUSION_TERMS = util.read_list("excluded_titles.txt")
+IS_STARTUP_PROMPT = util.read_const_file("is_startup_prompt.txt").read_text(errors="ignore")
+THESIS_MATCH_PROMPT = util.read_const_file("thesis_match_prompt.txt").read_text(errors="ignore")
+IS_MANUFACTURING_PROMPT = util.read_const_file("manufacturing_prompt.txt").read_text(errors="ignore")
+IS_HAZMAT_PROMPT = util.read_const_file("is_hazmat_prompt.txt").read_text(errors="ignore")
 
-LLAMA_API_KEY = os.environ['LLAMA_API_KEY']
+LLAMA_API_KEY = os.environ.get("LLAMA_API_KEY", "")
 
 
 class ArgsPreprocessor(ABC):

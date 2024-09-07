@@ -13,7 +13,7 @@ from arbm_core.private.projects import InvestmentStage, LinkedinCompany, \
     ProjectAnalytics, ProjectStatus, ProjectTag, ProjectTagsAssociation, TrackedProject
 from arbm_core.private.twitter import TwitterProject
 
-from crm.dependencies import QueryParams
+from .dependencies import QueryParams
 
 
 

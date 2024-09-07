@@ -21,25 +21,25 @@ from arbm_core.private.projects import ProjectStatus
 from arbm_core.private.linkedin import LinkedinLike
 from arbm_core.private.investors import Investor
 from arbm_core.core.publishing import publish_project, PublishingError
-from notifying.admin import notify_parsing_error
-from projects import FilterPreconditionException, FilteringEvent, FilteringException, LogEvent, ProjectException
+from ..notifying.admin import notify_parsing_error
+from ..projects import FilterPreconditionException, FilteringEvent, FilteringException, LogEvent, ProjectException
 
-from projects.linkedin_utils import extract_project_data, load_profile_from_like, parse_company_data
-from projects.linkedin_utils import fetch_cached
-from projects.project_init import inject_project
-from projects.schemas.linkedin import ProjectLinkedinDetailsSchema
-from projects.schemas.project import ProjectData
-from projects.schemas.signals import FundIdSchema, LinkedinPostSignal
+from ..projects.linkedin_utils import extract_project_data, load_profile_from_like, parse_company_data
+from ..projects.linkedin_utils import fetch_cached
+from ..projects.project_init import inject_project
+from ..projects.schemas.linkedin import ProjectLinkedinDetailsSchema
+from ..projects.schemas.project import ProjectData
+from ..projects.schemas.signals import FundIdSchema, LinkedinPostSignal
 
-import util
+from packages.crm import util
 from openai.error import RateLimitError
-from api_external import ApiError, iscraper
-from api_external.iscraper import profile_company_details_v3
-from parsing import LinkedinEnrichError, NoMatchesException
-from parsing.content_queue import PersistentQueue
-from projects import DuplicateProjectsError
-from util import UrlParsingError, get_linkedin_id, log_event, utc_now
-from projects.schemas.signals import LinkedinSourceSchema
+from ..api_external import ApiError, iscraper
+from ..api_external.iscraper import profile_company_details_v3
+from . import LinkedinEnrichError, NoMatchesException
+from .content_queue import PersistentQueue
+from ..projects import DuplicateProjectsError
+from ..util import UrlParsingError, get_linkedin_id, log_event, utc_now
+from ..projects.schemas.signals import LinkedinSourceSchema
 
 MODULE_NAME = os.path.basename(__file__)
 

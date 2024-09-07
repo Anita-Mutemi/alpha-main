@@ -5,10 +5,10 @@ from email.message import EmailMessage
 
 from loguru import logger
 
-SMTP_SERVER = os.environ["SMTP_SERVER"]
-SMTP_PORT = int(os.environ["SMTP_PORT"])
-SENDER_LOGIN = os.environ["SMTP_USER"]
-SENDER_PASSWORD = os.environ["SMTP_PASSWORD"]
+SMTP_SERVER = os.environ.get("SMTP_SERVER", "")
+SMTP_PORT = int(os.environ.get("SMTP_PORT", "0"))
+SENDER_LOGIN = os.environ.get("SMTP_USER", "")
+SENDER_PASSWORD = os.environ.get("SMTP_PASSWORD", "")
 
 SMTP_DEBUG_LEVEL = os.environ.get("SMTP_DEBUG_LEVEL", "0")
 SMTP_DEBUG_LEVEL = int(SMTP_DEBUG_LEVEL) if SMTP_DEBUG_LEVEL.isnumeric() else None

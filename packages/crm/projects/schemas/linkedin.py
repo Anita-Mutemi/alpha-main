@@ -7,7 +7,7 @@ from loguru import logger
 
 from pydantic import BaseModel, Field, HttpUrl, Json, validator, root_validator
 
-from util import clean_url, validate_linkedin_url
+from ...util import clean_url, validate_linkedin_url
 
 
 def parse_list(v):
