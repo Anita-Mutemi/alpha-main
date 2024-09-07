@@ -251,7 +251,7 @@ SQLAlchemy = "^1.4"
 type = "git"
 url = "https://github.com/Anita-Mutemi/core-main.git"
 reference = "main"
-resolved_reference = "180c2b5f57e738ffcf9871a3959834a4372a1a39"
+resolved_reference = "c69d3b9deee58a267b2c818d0387b07951aae05c"
 
 [[package]]
 name = "async-timeout"
