@@ -249,9 +249,9 @@ SQLAlchemy = "^1.4"
 
 [package.source]
 type = "git"
-url = "git@github.com:Anita-Mutemi/core-main.git"
+url = "https://github.com/Anita-Mutemi/core-main.git"
 reference = "main"
-resolved_reference = "49c83f3e3973c0bb8e0fe58a06cc9c626ae581e1"
+resolved_reference = "180c2b5f57e738ffcf9871a3959834a4372a1a39"
 
 [[package]]
 name = "async-timeout"
@@ -2003,13 +2003,13 @@ tests = ["check-manifest", "coverage", "defusedxml", "markdown2", "olefile", "pa
 
 [[package]]
 name = "platformdirs"
-version = "4.2.2"
+version = "4.3.1"
 description = "A small Python package for determining appropriate platform-specific dirs, e.g. a `user data dir`."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "platformdirs-4.2.2-py3-none-any.whl", hash = "sha256:2d7a1657e36a80ea911db832a8a6ece5ee53d8de21edd5cc5879af6530b1bfee"},
-    {file = "platformdirs-4.2.2.tar.gz", hash = "sha256:38b7b51f512eed9e84a22788b4bce1de17c0adb134d6becb09836e37d8654cd3"},
+    {file = "platformdirs-4.3.1-py3-none-any.whl", hash = "sha256:facaa5a3c57aa1e053e3da7b49e0cc31fe0113ca42a4659d5c2e98e545624afe"},
+    {file = "platformdirs-4.3.1.tar.gz", hash = "sha256:63b79589009fa8159973601dd4563143396b35c5f93a58b36f9049ff046949b1"},
 ]
 
 [package.extras]
@@ -3425,4 +3425,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "959f872a29a1dbcaacf13761cff99577a69a9d217fa6f491a950ac674c1c4572"
+content-hash = "1ac9360843602e2dfcaf55cfa86d2fd4ae3fe89e8298146c34333d2e0cec4449"
