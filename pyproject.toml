@@ -42,8 +42,7 @@ api-analytics = "^1.2.2"
 
 [tool.poetry.group.crm_fastapi.dependencies]
 uvicorn = "^0.22.0"
-arbm_core = {git = "https://github.com/Anita-Mutemi/core-main.git", rev = "49c83f3e3973c0bb8e0fe58a06cc9c626ae581e1"}
-
+arbm_core = {git = "https://github.com/Anita-Mutemi/core-main.git", branch = "main"}
 
 [tool.poetry.dev-dependencies]
 black = "^22.6.0"
