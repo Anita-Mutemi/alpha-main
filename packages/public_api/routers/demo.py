@@ -7,12 +7,12 @@ from pydantic import ValidationError
 
 from arbm_core.public.projects import Project
 
-from dependencies import PrivateSession
-from search_utils import search_and_publish, copy_project_filters, get_filter_values, \
+from ..dependencies import PrivateSession
+from ..search_utils import search_and_publish, copy_project_filters, get_filter_values, \
                          suggest_projects
-from schemas.schemas import SearchFiltersSchema
-from schemas.project import ProjectSchema
-from routers.graph import Graph, build_graph
+from ..schemas.schemas import SearchFiltersSchema
+from ..schemas.project import ProjectSchema
+from .graph import Graph, build_graph
 
 
 router = APIRouter()

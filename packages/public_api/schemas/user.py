@@ -3,7 +3,7 @@ from datetime import datetime
 from pydantic import BaseModel, root_validator
 
 from .schemas import AllOptional, ModifiableGetter
-from schemas.funds import FundSchema
+from .funds import FundSchema
 
 
 class OrganizationSchema(BaseModel):

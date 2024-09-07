@@ -10,10 +10,10 @@ from sqlalchemy.exc import IntegrityError
 from arbm_core.core.publishing import publish_project, PublishingError
 from arbm_core.private.projects import TrackedProject, ProjectAnalytics, ProjectTagsAssociation, ProjectTag, ProjectStatus, InvestmentStage
 
-from schemas.schemas import SearchFiltersSchema, BusinessModel, ProductType
+from .schemas.schemas import SearchFiltersSchema, BusinessModel, ProductType
 
-from dependencies import PrivateSession
-from utils import clean_query_string
+from .dependencies import PrivateSession
+from .utils import clean_query_string
 
 
 filters_config = {

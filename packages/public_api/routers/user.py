@@ -10,9 +10,9 @@ from arbm_core.private.investors import Fund
 from arbm_core.public.users import AutoProjectList, ClientUser
 from arbm_core.public.projects import FundProfile
 
-from dependencies import LoggedInUser, PrivateSession
-from schemas.funds import FundFullSchema
-from schemas.user import AutoList, CreateAutoList, PatchAutoList
+from ..dependencies import LoggedInUser, PrivateSession
+from ..schemas.funds import FundFullSchema
+from ..schemas.user import AutoList, CreateAutoList, PatchAutoList
 
 
 router = APIRouter()

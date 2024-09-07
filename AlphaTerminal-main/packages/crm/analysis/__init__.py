@@ -1,2 +1,0 @@
-class AnnotationError(Exception):
-        pass

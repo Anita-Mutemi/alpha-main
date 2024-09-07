@@ -1,3 +1,0 @@
-data
-cloud
-server

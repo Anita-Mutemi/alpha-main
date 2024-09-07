@@ -7,18 +7,18 @@ from fastapi import APIRouter, HTTPException, Request, Response
 from arbm_core.public.users import ClientOrganization
 from arbm_core.public.users import OrganizationReport
 from arbm_core.public.projects import UserProjectAssociation, Project
-from schemas.feed import ProjectSchema, ProjectUserInfo
+from ..schemas.feed import ProjectSchema, ProjectUserInfo
 
-from dependencies import PrivateSession
-from schemas.reports import OrganizationReportSchema
-from schemas.reports import ReportDataSchema
+from ..dependencies import PrivateSession
+from ..schemas.reports import OrganizationReportSchema
+from ..schemas.reports import ReportDataSchema
 
 from pydantic import BaseModel, root_validator
 from pydantic.utils import GetterDict
 from typing import Any
 
-from dependencies import LoggedInUser
-from utils import log_user_event
+from ..dependencies import LoggedInUser
+from ..utils import log_user_event
 
 
 logger.add(sys.stdout)

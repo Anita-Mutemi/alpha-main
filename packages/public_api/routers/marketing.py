@@ -6,9 +6,9 @@ from pydantic import EmailStr
 
 from arbm_core.public.promo import TerminalRequest, NewsletterSubscriber
 
-from dependencies import PrivateSession
-from notifications import make_request_email
-from schemas.schemas import AccessRequest
+from ..dependencies import PrivateSession
+from ..notifications import make_request_email
+from ..schemas.schemas import AccessRequest
 
 router = APIRouter()
 

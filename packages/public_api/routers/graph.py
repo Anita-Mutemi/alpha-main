@@ -13,14 +13,14 @@ from sqlalchemy.orm import Session
 from arbm_core.private.projects import TrackedProject
 from arbm_core.public.projects import Project, FundProfile
 from arbm_core.public.schemas.graph import Graph, Node, Link
-from dependencies import PrivateSession, LoggedInUser
+from ..dependencies import PrivateSession, LoggedInUser
 
-from search_utils import search_and_publish
-from schemas.schemas import SearchFiltersSchema
-from schemas.funds import FundSchema
-from schemas.feed import ProjectEntry, ProjectSchema
+from ..search_utils import search_and_publish
+from ..schemas.schemas import SearchFiltersSchema
+from ..schemas.funds import FundSchema
+from ..schemas.feed import ProjectEntry, ProjectSchema
 
-from utils import log_user_event,\
+from ..utils import log_user_event,\
                   get_user_feed_projects, color_scaler
 
 

@@ -9,7 +9,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from api_analytics.fastapi import Analytics
 
-from fastapi_cache import FastAPICache
+from fastapi_cache import FastAPICache # type: ignore
 from fastapi_cache.backends.inmemory import InMemoryBackend
 
 
@@ -17,12 +17,12 @@ import uvicorn
 from pydantic import BaseModel
 from loguru import logger
 
-from routers import demo, feed, funds, projects, graph, marketing, reports, search, user
+from .routers import demo, feed, funds, projects, graph, marketing, reports, search, user
 
-from schemas.user import User
+from .schemas.user import User
 
-from dependencies import LoggedInUser
-from utils import ACCESS_TOKEN_EXPIRE_MINUTES, authenticate_user, create_access_token, log_user_event
+from .dependencies import LoggedInUser
+from .utils import ACCESS_TOKEN_EXPIRE_MINUTES, authenticate_user, create_access_token, log_user_event
 
 
 logger.remove()

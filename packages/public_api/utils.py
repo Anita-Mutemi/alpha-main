@@ -26,8 +26,8 @@ from arbm_core.public.users import ClientUser
 from arbm_core.public.logging import LogItem
 from arbm_core.private import Session as BackendSession
 
-from schemas.user import User, UserInDB
-from schemas.project import ProjectSchema
+from .schemas.user import User, UserInDB
+from .schemas.project import ProjectSchema
 
 
 ALGORITHM = "HS256"

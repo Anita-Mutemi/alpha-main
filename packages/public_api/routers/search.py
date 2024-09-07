@@ -11,13 +11,13 @@ from arbm_core.private.investors import Fund
 from arbm_core.public.projects import Project
 from arbm_core.core.parsing import parse_website
 
-from dependencies import LoggedInUser, PrivateSession, QueryParams
-from schemas.schemas import SearchFiltersSchema
-from schemas.funds import FundFullSchema
-from schemas.project import ProjectSchema
-from search_utils import search_and_publish, copy_project_filters, get_filter_values, \
+from ..dependencies import LoggedInUser, PrivateSession, QueryParams
+from ..schemas.schemas import SearchFiltersSchema
+from ..schemas.funds import FundFullSchema
+from ..schemas.project import ProjectSchema
+from ..search_utils import search_and_publish, copy_project_filters, get_filter_values, \
                             suggest_projects
-from dependencies import PrivateSession
+from ..dependencies import PrivateSession
 
 router = APIRouter()
 

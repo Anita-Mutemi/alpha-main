@@ -3,8 +3,8 @@ from typing import Any
 from uuid import UUID
 from pydantic import BaseModel
 
-from schemas.schemas import ModifiableGetter, root_validator
-from schemas.feed import ProjectSchema, ProjectUserInfo
+from .schemas import ModifiableGetter, root_validator
+from .feed import ProjectSchema, ProjectUserInfo
 
 
 class UserStatsSchema(BaseModel):

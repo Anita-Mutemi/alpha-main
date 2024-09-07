@@ -17,10 +17,10 @@ from arbm_core.private.projects import Fund, TrackedProject, ProjectTagsAssociat
 from arbm_core.public.projects import Project
 
 
-from dependencies import LoggedInUser, PrivateSession, QueryParams
+from ..dependencies import LoggedInUser, PrivateSession, QueryParams
 
-from schemas.funds import FundFullSchema
-from schemas.project import ProjectSchema
+from ..schemas.funds import FundFullSchema
+from ..schemas.project import ProjectSchema
 
 
 router = APIRouter()

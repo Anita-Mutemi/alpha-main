@@ -4,8 +4,8 @@ from fastapi import Depends, HTTPException, status
 from jose import JWTError, jwt
 from sqlalchemy.orm import Session
 
-from schemas.user import TokenData, User
-from utils import ALGORITHM, SECRET_KEY, oauth2_scheme, get_user
+from .schemas.user import TokenData, User
+from .utils import ALGORITHM, SECRET_KEY, oauth2_scheme, get_user
 
 
 class PaginationParams:

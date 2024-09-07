@@ -12,13 +12,13 @@ from arbm_core.private.projects import TrackedProject
 from arbm_core.private.investors import Fund
 from arbm_core.public.projects import Project, UserProjectAssociation
 
-from dependencies import LoggedInUser, PrivateSession
-from schemas.funds import FundSchema
-from schemas.feed import ProjectEntry, SafeProjectList
-from utils import convert_timeline, get_user_feed_projects, \
+from ..dependencies import LoggedInUser, PrivateSession
+from ..schemas.funds import FundSchema
+from ..schemas.feed import ProjectEntry, SafeProjectList
+from ..utils import convert_timeline, get_user_feed_projects, \
                                     get_project_feedback, get_user_project, \
                                     log_user_event
-from notifications import notify_feedback
+from ..notifications import notify_feedback
 
 
 router = APIRouter()

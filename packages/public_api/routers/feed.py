@@ -10,10 +10,10 @@ from arbm_core.public.users import ClientUser
 from arbm_core.core import MongoDb
 from arbm_core.core.signals import get_signals_multiple_funds
 
-from schemas.feed import Feed
-from schemas.project import ProjectSchema
-from dependencies import LoggedInUser, PrivateSession, QueryParams
-from utils import get_project_feedback, get_user_feed_projects, get_user_project, log_user_event, \
+from ..schemas.feed import Feed
+from ..schemas.project import ProjectSchema
+from ..dependencies import LoggedInUser, PrivateSession, QueryParams
+from ..utils import get_project_feedback, get_user_feed_projects, get_user_project, log_user_event, \
         get_filter_options
 
 router = APIRouter()
