@@ -1,1 +1,1 @@
-web: uvicorn packages.crm.crm.crm_api:app --host=0.0.0.0 --port=${PORT:-5000}
+web: uvicorn packages.public_api.app:app --host=0.0.0.0 --port=$PORT

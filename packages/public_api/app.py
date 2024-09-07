@@ -2,6 +2,8 @@ from datetime import timedelta
 import sys
 import os
 
+print(sys.path)
+
 from fastapi import Depends, FastAPI, HTTPException, Request, status
 from fastapi.security import OAuth2PasswordRequestForm
 from fastapi.middleware.cors import CORSMiddleware

@@ -44,6 +44,7 @@ api-analytics = "^1.2.2"
 uvicorn = "^0.22.0"
 arbm_core = {git = "https://github.com/Anita-Mutemi/core-main.git", rev = "49c83f3e3973c0bb8e0fe58a06cc9c626ae581e1"}
 
+
 [tool.poetry.dev-dependencies]
 black = "^22.6.0"
 isort = "^5.10.1"
