@@ -3,14 +3,14 @@ import sys
 from pprint import pprint
 import os
 
-from fastapi import Depends, FastAPI, HTTPException, Request, status
-from fastapi.security import OAuth2PasswordRequestForm
-from fastapi.middleware.cors import CORSMiddleware
+from fastapi import Depends, FastAPI, HTTPException, Request, status # type: ignore
+from fastapi.security import OAuth2PasswordRequestForm # type: ignore
+from fastapi.middleware.cors import CORSMiddleware # type: ignore
 
-from api_analytics.fastapi import Analytics
+from api_analytics.fastapi import Analytics # type: ignore
 
 from fastapi_cache import FastAPICache # type: ignore
-from fastapi_cache.backends.inmemory import InMemoryBackend
+from fastapi_cache.backends.inmemory import InMemoryBackend # type: ignore
 
 
 import uvicorn
