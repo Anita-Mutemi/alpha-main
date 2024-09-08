@@ -40,6 +40,7 @@ if not API_ANALYTICS_KEY:
 app = FastAPI()
 
 # Include public API routers
+app.include_router(demo.router, prefix="")
 app.include_router(demo.router, prefix="/demo")
 app.include_router(feed.router, prefix="/v1/feed")
 app.include_router(projects.router, prefix="/v1/projects")
