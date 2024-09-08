@@ -1,1 +1,1 @@
-web: PYTHONPATH=./packages/crm uvicorn crm.crm.crm_api:app --host 0.0.0.0 --port $PORT
+web: PYTHONPATH=./packages/crm uvicorn packages.crm.crm.crm_api:app --host 0.0.0.0 --port $PORT
