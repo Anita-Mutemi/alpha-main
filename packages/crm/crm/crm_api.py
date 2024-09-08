@@ -54,7 +54,7 @@ v1 = FastAPI(
     openapi_tags=tags_metadata
 )
 
-v1.include_router(entities.router, prefix='')
+v1.include_router(entities.router, prefix='/')
 v1.include_router(clients.router, prefix='/clients', tags=[RouterTags.clients])
 v1.include_router(lookup.router, prefix='/lookup')
 v1.include_router(monitoring.router, prefix='/monitoring', tags=[RouterTags.logs])
