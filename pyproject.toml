@@ -39,10 +39,10 @@ ordered-enum = "^0.0.8"
 fastapi-cache2 = "^0.2.1"
 celery = "^5.3.6"
 api-analytics = "^1.2.2"
+arbm-core = "^0.1.0"
 
 [tool.poetry.group.crm_fastapi.dependencies]
 uvicorn = "^0.22.0"
-arbm_core = {git = "https://github.com/Anita-Mutemi/core-main.git", branch = "main"}
 
 [tool.poetry.dev-dependencies]
 black = "^22.6.0"

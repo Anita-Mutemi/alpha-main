@@ -227,31 +227,27 @@ tornado = ["tornado"]
 
 [[package]]
 name = "arbm-core"
-version = "0.4.1"
-description = ""
+version = "0.1.0"
+description = "Core functionalities for ARBM"
 optional = false
-python-versions = "^3.10"
-files = []
-develop = false
+python-versions = "<4.0,>=3.10"
+files = [
+    {file = "arbm_core-0.1.0-py3-none-any.whl", hash = "sha256:de7e3ae220191782c0a0927ee82bc2e2382111efb4cdaa7f0e656b43b69cca19"},
+    {file = "arbm_core-0.1.0.tar.gz", hash = "sha256:85838203a45f1258d60dd9b0b168f6311d05ebf2994820761cc46b2d5d31e787"},
+]
 
 [package.dependencies]
-alembic = "^1.11.1"
-deprecated = "^1.2.14"
-loguru = "^0.7.0"
-ordered-enum = "^0.0.8"
+alembic = ">=1.11.1,<2.0.0"
+deprecated = ">=1.2.14,<2.0.0"
+loguru = ">=0.7.0,<0.8.0"
+ordered-enum = ">=0.0.8,<0.0.9"
 pandas = "2.0.2"
-psycopg2-binary = "^2.9.6"
-pydantic = "^1.10"
-pymongo = "^4.5.0"
-python-dotenv = "^1.0.0"
-pytz = "^2023.3"
-SQLAlchemy = "^1.4"
-
-[package.source]
-type = "git"
-url = "https://github.com/Anita-Mutemi/core-main.git"
-reference = "main"
-resolved_reference = "c69d3b9deee58a267b2c818d0387b07951aae05c"
+psycopg2-binary = ">=2.9.6,<3.0.0"
+pydantic = ">=1.10,<2.0"
+pymongo = ">=4.5.0,<5.0.0"
+python-dotenv = ">=1.0.0,<2.0.0"
+pytz = ">=2023.3,<2024.0"
+SQLAlchemy = ">=1.4,<2.0"
 
 [[package]]
 name = "async-timeout"
@@ -3425,4 +3421,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "1ac9360843602e2dfcaf55cfa86d2fd4ae3fe89e8298146c34333d2e0cec4449"
+content-hash = "876a3ab205e54ac07f973127c7179217878b3e73448366c536d364a17d6fb3b7"
