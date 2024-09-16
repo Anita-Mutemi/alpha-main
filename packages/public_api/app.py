@@ -59,6 +59,7 @@ origins = [
     "https://lookingglass.arbmintel.com",
     "https://www.lookingglass.arbmintel.com",
     "https://illustrious-palmier-9d22e4.netlify.app",
+    "https://66e81f3100b3a30008c9b1b6--superlative-kelpie-338e57.netlify.app",
     "*",
 ]
 

@@ -27,6 +27,7 @@ origins = [
     "https://staging.alphaterminal.pro",
     "https://illustrious-palmier-9d22e4.netlify.app",
     "https://desolate-harbor-30841-707d8d470803.herokuapp.com",
+    "https://66e81f3100b3a30008c9b1b6--superlative-kelpie-338e57.netlify.app"
 ]
 
 app = FastAPI()
