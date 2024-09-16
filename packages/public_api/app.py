@@ -58,7 +58,8 @@ origins = [
     "https://lookingglass.arbmintel.com/",
     "https://lookingglass.arbmintel.com",
     "https://www.lookingglass.arbmintel.com",
-    "*"
+    "https://illustrious-palmier-9d22e4.netlify.app",
+    "*",
 ]
 
 origins = ["*"]

@@ -24,7 +24,8 @@ from packages.crm.crm.routers import clients, collections, entities, lookup, mon
 origins = [
     "*",
     "staging.alphaterminal.pro",
-    "https://staging.alphaterminal.pro"
+    "https://staging.alphaterminal.pro",
+    "https://illustrious-palmier-9d22e4.netlify.app",
 ]
 
 app = FastAPI()
